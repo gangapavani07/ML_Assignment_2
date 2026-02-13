@@ -1,6 +1,6 @@
 ❤️ Heart Disease Prediction using Machine Learning
 
-📌 Problem Statement
+📌 **Problem Statement**
 
 The objective of this project is to build and compare multiple Machine Learning classification models to predict whether a person has heart disease based on medical attributes. The goal is to evaluate different models and identify the best-performing one using standard performance metrics.
 
@@ -90,3 +90,4 @@ ________________________________________________________________________________
 | Random Forest       | **Achieved the best overall performance across all evaluation metrics.** |
 | XGBoost             | Performed very well with high accuracy and AUC, close to Random Forest.  |
 |_____________________|__________________________________________________________________________|
+
