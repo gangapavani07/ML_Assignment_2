@@ -1,10 +1,10 @@
-❤️ Heart Disease Prediction using Machine Learning
+❤️ **Heart Disease Prediction using Machine Learning**
 
 📌 **Problem Statement**
 
 The objective of this project is to build and compare multiple Machine Learning classification models to predict whether a person has heart disease based on medical attributes. The goal is to evaluate different models and identify the best-performing one using standard performance metrics.
 
-📊 Dataset Description
+📊 **Dataset Description**
 
 The dataset used in this project was obtained from Kaggle – “Heart Failure Prediction Dataset” by Fedesoriano.
 It contains real clinical records collected from multiple hospitals and focuses on predicting the occurrence of heart disease events.
@@ -12,7 +12,7 @@ It contains real clinical records collected from multiple hospitals and focuses 
 The dataset consists of 918 patient records with 11 clinical input features and 1 binary target variable (HeartDisease).
 These features represent important physiological and medical indicators commonly used by cardiologists for diagnosis.
 
-🔹 Features include:
+🔹 **Features include:**
 
 Age
 
@@ -36,7 +36,7 @@ Oldpeak
 
 ST_Slope
 
-🔹 Target Variable:
+🔹 **Target Variable**:
 
 HeartDisease
 
@@ -44,7 +44,7 @@ HeartDisease
 
 1 → Heart disease present
 
-🔹 Why this dataset is important:
+🔹 **Why this dataset is important**:
 
 Based on real clinical heart failure data
 
@@ -55,7 +55,7 @@ Balanced enough for ML evaluation
 Widely used for benchmarking ML classifiers
 
 
-⚙️ Machine Learning Models Implemented
+⚙️ **Machine Learning Models Implemented**
 
 Logistic Regression
 
@@ -79,7 +79,7 @@ ________________________________________________________________________________
 | XGBoost (Ensemble)      | 0.870     | 0.921     | 0.895     | 0.879     | 0.887     | 0.733     |
 |_________________________|___________|___________|___________|___________|___________|___________|
 
-
+observations
 __________________________________________________________________________________________________
 | Model Name          | Observation about model performance                                      |
 | ------------------- | ------------------------------------------------------------------------ |
@@ -90,4 +90,5 @@ ________________________________________________________________________________
 | Random Forest       | **Achieved the best overall performance across all evaluation metrics.** |
 | XGBoost             | Performed very well with high accuracy and AUC, close to Random Forest.  |
 |_____________________|__________________________________________________________________________|
+
 
