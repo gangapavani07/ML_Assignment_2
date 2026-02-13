@@ -8,8 +8,12 @@ import matplotlib.pyplot as plt
 st.set_page_config(page_title="Heart Disease Prediction", layout="wide")
 
 st.title("❤️ Heart Disease Prediction App")
-
+st.caption("ML-based clinical decision support demo")
 st.write("Select a model and upload a CSV file to evaluate predictions.")
+st.markdown(
+    "<style> .stApp { background-color: #0f172a; color: #e5e7eb; } </style>",
+    unsafe_allow_html=True
+)
 
 # Load models
 models = {
@@ -23,6 +27,43 @@ models = {
 
 model_name = st.selectbox("Choose a model", list(models.keys()))
 model = models[model_name]
+
+st.markdown("""
+<style>
+[data-testid="stFileUploader"] {
+    background: linear-gradient(135deg, #1e3a8a, #9333ea);
+    border: 2px dashed #facc15;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+[data-testid="stFileUploader"] label {
+    color: #fde68a;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+[data-testid="stFileUploader"] section {
+    background: rgba(0,0,0,0.15);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+[data-testid="stFileUploader"] button {
+    background: #22c55e !important;
+    color: black !important;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+
+[data-testid="stFileUploader"] button:hover {
+    background: #16a34a !important;
+    color: white !important;
+}
+</style>
+""", unsafe_allow_html=True)
 
 uploaded_file = st.file_uploader("Upload test CSV", type="csv")
 
